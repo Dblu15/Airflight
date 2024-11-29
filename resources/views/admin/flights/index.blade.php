@@ -1,10 +1,10 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Welcome to the Admin Page!</h1>
     <div class="row">
         <div class="col-lg-6">
             <h2>Flights Management</h2>
-            <button type="button" class="btn btn-warning"><a href="{{ url('/flight/add') }}">Thêm mới</a></button>
+            <button type="button" class="btn btn-warning"><a href="{{ url('/admin/flight/add') }}">Thêm mới</a></button>
             <br><br>
             <table class="table table-bordered">
                 <thead>
@@ -41,12 +41,17 @@
                         <td>{{$fl->status}}</td>
                         <td>{{$fl->ticketPrice}}</td>
 
-                        <td><button type="button" class="btn btn-primary ">
-                                <a class="text-white" href="{{ route('route_flight_edit',['id'=>$fl->idFlight]) }}">Sửa</a>
-                            </button></td>
-                        <td><button type="button" class="btn btn-danger">
+                        <td>
+                            <button type="button" class="btn btn-primary ">
+                                <a class="text-white"
+                                   href="{{ route('route_flight_edit',['id'=>$fl->idFlight]) }}">Sửa</a>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger">
                                 <a class="text-white" href="{{ route('route_flight_delete',['id'=>$fl->idFlight]) }}">Xóa</a>
-                            </button></td>
+                            </button>
+                        </td>
                     </tr>
                 @endforeach
 

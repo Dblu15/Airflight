@@ -1,10 +1,10 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Welcome to the Admin Page!</h1>
     <div class="row">
         <div class="col-lg-12">
             <h2>User Management</h2>
-            <button type="button" class="btn btn-warning"><a href="{{ url('/user/add') }}">Thêm mới</a></button>
+            <button type="button" class="btn btn-warning"><a href="{{ url('/admin/user/add') }}">Thêm mới</a></button>
             <br><br>
             <table class="table table-bordered">
                 <thead>
@@ -26,11 +26,13 @@
                         <td>{{$us->password}}</td>
                         <td>{{$us->phoneNumber}}</td>
                         <td>{{$us->role}}</td>
-                        <td><button type="button" class="btn btn-primary ">
+                        <td>
+                            <button type="button" class="btn btn-primary ">
                                 <a class="text-white" href="{{ route('route_user_edit',['id'=>$us->id]) }}">Sửa</a>
                             </button>
                         </td>
-                        <td><button type="button" class="btn btn-danger">
+                        <td>
+                            <button type="button" class="btn btn-danger">
                                 <a class="text-white" href="{{ route('route_user_delete',['id'=>$us->id]) }}">Xóa</a>
                             </button>
                         </td>

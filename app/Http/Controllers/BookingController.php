@@ -13,7 +13,7 @@ class BookingController extends Controller
         $booking = DB::table('booking')
             ->select('idBooking','fullName','phoneNumber','email','bookingDate','departureAirport','arrivalAirport','departureDate','departureTime','ticketPrice','paymentStatus','bookingStatus')
             ->get();
-        return view('bookings.index',compact('booking'));
+        return view('admin.bookings.index',compact('booking'));
     }
     public function add(BookingRequest $request){
         if ($request->isMethod('POST')){
@@ -24,7 +24,7 @@ class BookingController extends Controller
                 return redirect()->route('route_booking_index');
             }
         }
-        return view('bookings.add');
+        return view('admin.bookings.add');
     }
     public function edit(BookingRequest $request, $id){
         $booking = DB::table('booking')->where('idBooking','=',$id)->first();
@@ -35,7 +35,7 @@ class BookingController extends Controller
                 return redirect()->route('route_booking_index',['idBooking'=>$id]);
             }
         }
-        return view('bookings.edit',compact('booking'));
+        return view('admin.bookings.edit',compact('booking'));
     }
     public function delete($id){
         Booking::where('idBooking',$id)->delete();

@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Session;
 class HomeController extends Controller
 {
     public function index(){
-        return view('templates.layoutClient');
+        return view('frontend.templates.layoutClient');
     }
 
     public function addAccount(UserRequest $request){
@@ -27,7 +27,7 @@ class HomeController extends Controller
                 return redirect()->route('route_home');
             }
         }
-        return view('clients.createAcc',compact('role'));
+        return view('frontend.clients.createAcc',compact('role'));
     }
 
 }

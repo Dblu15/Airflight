@@ -1,4 +1,4 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Add new Flight</h1>
     <form action="{{ route('route_flight_add') }}" method="POST" enctype="multipart/form-data">

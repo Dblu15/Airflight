@@ -18,7 +18,7 @@ class FindFlightController extends Controller
                 return redirect()->route('editFindFlight');
             }
         }
-        return view('findFlight.add');
+        return view('admin.findFlight.add');
     }
     public function edit(BookingRequest $request, $id){
         $booking = DB::table('booking')->where('idBooking','=',$id)->first();
@@ -29,6 +29,6 @@ class FindFlightController extends Controller
                 return redirect()->route('route_home',['idBooking'=>$id]);
             }
         }
-        return view('findFlight.edit',compact('booking'));
+        return view('admin.findFlight.edit',compact('booking'));
     }
 }

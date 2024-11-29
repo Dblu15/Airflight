@@ -1,4 +1,4 @@
-    @extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Add new User</h1>
     <form action="{{ route('route_user_add') }}" method="POST">
@@ -32,9 +32,9 @@
                 <option value="Admin">Admin</option>
                 <option value="staff">Staff</option>
                 <option value="User">User</option>
-{{--                @foreach($role as $ro)--}}
-{{--                    <option value="{{$ro->name}}">{{$ro->name}}</option>--}}
-{{--                @endforeach--}}
+                {{--                @foreach($role as $ro)--}}
+                {{--                    <option value="{{$ro->name}}">{{$ro->name}}</option>--}}
+                {{--                @endforeach--}}
             </select>
             <p class="text-danger">{{ $errors->first('role') }}</p>
         </div>

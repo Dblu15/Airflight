@@ -7,9 +7,11 @@
     <title>Admin Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Thêm liên kết CSS của Bootstrap Timepicker -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <style>
         /* Customize sidebar */
         .sidebar {
@@ -48,16 +50,16 @@
     <div class="sidebar col-md-4">
         <img class="col-10 img-rounded" src="https://cdn-icons-png.flaticon.com/512/906/906343.png">
         <h2>Admin Page</h2>
-        <a href="{{ url('/') }}">Airlines</a>
-        <a href="{{ url('/user/list') }}">Users</a>
-        <a href="{{ url('/flight/list') }}">Flights</a>
-        <a href="{{ url('/booking/list') }}">Bookings</a>
-        <a href="{{ url('/ticket/list') }}">Tickets</a>
+        <a href="{{ url('/admin/airline/list') }}">Airlines</a>
+        <a href="{{ url('/admin/user/list') }}">Users</a>
+        <a href="{{ url('/admin/flight/list') }}">Flights</a>
+        <a href="{{ url('/admin/booking/list') }}">Bookings</a>
+        <a href="{{ url('/admin/ticket/list') }}">Tickets</a>
     </div>
 
     <!-- Content -->
     <div class="content col-md-8">
-        @include('templates.errors')
+        @include('admin.layouts.errors')
         @yield('content')
     </div>
 
@@ -65,7 +67,7 @@
 <!-- Sidebar -->
 
 <!-- Footer -->
-<footer class="footer bg-dark text-light py-3" >
+<footer class="footer bg-dark text-light py-3">
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-1"></div>
@@ -83,8 +85,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script>
     // Sử dụng JavaScript để kích hoạt Timepicker cho input có class "timepicker"
-    document.addEventListener("DOMContentLoaded", function() {
-        $(document).ready(function() {
+    document.addEventListener("DOMContentLoaded", function () {
+        $(document).ready(function () {
             $('.timepicker').timepicker({
                 minuteStep: 1, // Bước nhảy tăng/giảm thời gian là 1 phút
                 showSeconds: false, // Không hiển thị giây
@@ -96,7 +98,7 @@
 </script>
 <script>
     // Sử dụng JavaScript để kích hoạt Datepicker cho input có class "datepicker"
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('.datepicker').datepicker({
             todayBtn: true, // Hiển thị nút "Hôm nay" để chọn ngày hiện tại
             clearBtn: true, // Hiển thị nút "Xóa" để xóa giá trị ngày
@@ -107,7 +109,7 @@
     });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         // Lấy ngày hôm nay
         var today = new Date();
 

@@ -13,7 +13,7 @@ class UserController extends Controller
         $users = DB::table('users')
             ->select('id','name','email','password','phoneNumber','role')
             ->get();
-        return view('users.index',compact('users'));
+        return view('admin.users.index',compact('users'));
     }
 //    public function add(UserRequest $request){
 //        if ($request->isMethod('POST')){
@@ -38,7 +38,7 @@ class UserController extends Controller
                 return redirect()->route('route_user_index');
             }
         }
-        return view('users.add',compact('role'));
+        return view('admin.users.add',compact('role'));
     }
     public function edit(UserRequest $request, $id){
         // cach 1 DB query
@@ -57,7 +57,7 @@ class UserController extends Controller
                 return redirect()->route('route_user_index',['id'=>$id]);
             }
         }
-        return view('users.edit',compact('user'));
+        return view('admin.users.edit',compact('user'));
     }
     public function delete($id){
         User::where('id',$id)->delete();

@@ -1,4 +1,4 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Edit Booking</h1>
     <form action="{{ route('route_booking_edit',['id'=>$booking->idBooking]) }}" method="POST">
@@ -20,7 +20,8 @@
         </div>
         <div class="form-group">
             <label for="">Booking Date</label>
-            <input type="text" class="form-control datepicker" id="autoChooseDate" name="bookingDate" value="{{$booking->bookingDate}}">
+            <input type="text" class="form-control datepicker" id="autoChooseDate" name="bookingDate"
+                   value="{{$booking->bookingDate}}">
             <p class="text-danger">{{ $errors->first('bookingDate') }}</p>
         </div>
         <div class="form-group">
@@ -35,12 +36,14 @@
         </div>
         <div class="form-group">
             <label for="">departure Date</label>
-            <input type="text" class="form-control datepicker " name="departureDate" value="{{$booking->departureDate}}">
+            <input type="text" class="form-control datepicker " name="departureDate"
+                   value="{{$booking->departureDate}}">
             <p class="text-danger">{{ $errors->first('departureTime') }}</p>
         </div>
         <div class="form-group">
             <label for="">Departure Time</label>
-            <input type="text" class="form-control timepicker " name="departureTime" value="{{$booking->departureTime}}">
+            <input type="text" class="form-control timepicker " name="departureTime"
+                   value="{{$booking->departureTime}}">
             <p class="text-danger">{{ $errors->first('departureTime') }}</p>
         </div>
 

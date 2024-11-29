@@ -1,4 +1,4 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Edit Booking</h1>
     <form action="{{ route('route_ticket_edit',['id'=>$ticket->idTicket]) }}" method="POST">
@@ -36,7 +36,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlSelect1">Ticket type</label>
-            <select class="form-control" name="ticketType" id="ticketType" >
+            <select class="form-control" name="ticketType" id="ticketType">
                 <option value="{{$ticket->ticketType}}">{{$ticket->ticketType}}</option>
                 @if($ticket->ticketType != "Hạng nhất")
                     <option value="Hạng nhất">Hạng nhất</option>

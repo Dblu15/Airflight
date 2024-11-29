@@ -1,10 +1,10 @@
-@extends('templates.layout')
+@extends('admin.layouts.layout')
 @section('content')
     <h1>Welcome to the Admin Page!</h1>
     <div class="row">
         <div class="col-lg-6">
             <h2>Ticket Management</h2>
-            <button type="button" class="btn btn-warning"><a href="{{ url('/ticket/add') }}">Thêm mới</a></button>
+            <button type="button" class="btn btn-warning"><a href="{{ url('/admin/ticket/add') }}">Thêm mới</a></button>
             <br><br>
             <table class="table table-bordered">
                 <thead>
@@ -35,12 +35,17 @@
                         <td>{{$tk->ticketPrice}}</td>
                         <td>{{$tk->seatNumber}}</td>
 
-                        <td><button type="button" class="btn btn-primary ">
-                                <a class="text-white" href="{{ route('route_ticket_edit',['id'=>$tk->idTicket]) }}">Sửa</a>
-                            </button></td>
-                        <td><button type="button" class="btn btn-danger">
+                        <td>
+                            <button type="button" class="btn btn-primary ">
+                                <a class="text-white"
+                                   href="{{ route('route_ticket_edit',['id'=>$tk->idTicket]) }}">Sửa</a>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger">
                                 <a class="text-white" href="{{ route('route_ticket_delete',['id'=>$tk->idTicket]) }}">Xóa</a>
-                            </button></td>
+                            </button>
+                        </td>
                     </tr>
                 @endforeach
 

@@ -1,6 +1,6 @@
-@extends('templates.layoutFindFlight')
+@extends('frontend.templates.layoutFindFlight')
 @section('findFlight')
-    <form action="{{ route('findFlight') }}" method="POST" >
+    <form action="{{ route('findFlight') }}" method="POST">
         @csrf
         <div class="row">
             <div class="col-xl-6 col-lg-6">

@@ -13,7 +13,7 @@ class AirlineController extends Controller
         $airlines = DB::table('airline')
             ->select('idAirline','name','country','email')
             ->get();
-        return view('airline.index',compact('airlines'));
+        return view('admin.airline.index',compact('airlines'));
     }
     public function add(AirlineRequest $request){
         if ($request->isMethod('POST')){
@@ -24,7 +24,7 @@ class AirlineController extends Controller
                 return redirect()->route('route_airline_index');
             }
         }
-        return view('airline.add');
+        return view('admin.airline.add');
     }
     public function edit(AirlineRequest $request, $id){
         // cach 1 DB query
@@ -38,7 +38,7 @@ class AirlineController extends Controller
                 return redirect()->route('route_airline_index',['id'=>$id]);
             }
         }
-        return view('airline.edit',compact('airline'));
+        return view('admin.airline.edit',compact('airline'));
     }
     public function delete($id){
         Airline::where('idAirline',$id)->delete();

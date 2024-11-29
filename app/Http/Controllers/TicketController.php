@@ -13,7 +13,7 @@ class TicketController extends Controller
         $tickets = DB::table('ticket')
             ->select('idTicket','userName','airline','departureAirport','arrivalAirport','departureDate','departureTime','ticketType','ticketPrice','seatNumber')
             ->get();
-        return view('tickets.index',compact('tickets'));
+        return view('admin.tickets.index',compact('tickets'));
     }
     public function add(TicketRequest $request){
         if ($request->isMethod('POST')){
@@ -24,7 +24,7 @@ class TicketController extends Controller
                 return redirect()->route('route_ticket_index');
             }
         }
-        return view('tickets.add');
+        return view('admin.tickets.add');
     }
     public function edit(TicketRequest $request, $id){
         // cach 1 DB query
@@ -38,7 +38,7 @@ class TicketController extends Controller
                 return redirect()->route('route_ticket_index',['idTicket'=>$id]);
             }
         }
-        return view('tickets.edit',compact('ticket'));
+        return view('admin.tickets.edit',compact('ticket'));
     }
     public function delete($id){
         Ticket::where('idTicket',$id)->delete();

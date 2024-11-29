@@ -13,7 +13,7 @@ class FlightController extends Controller
         $flight = DB::table('flight')
             ->select('idFlight','departureAirport','arrivalAirport','departureDate','dapartureTime','arrivalDate','arrivalTime','flightDuration','aircraft','numberOfStop','airlineName','status','ticketPrice')
             ->get();
-        return view('flights.index',compact('flight'));
+        return view('admin.flights.index',compact('flight'));
     }
     public function add(FlightRequest $request){
         if ($request->isMethod('POST')){
@@ -24,7 +24,7 @@ class FlightController extends Controller
                 return redirect()->route('route_flight_index');
             }
         }
-        return view('flights.add');
+        return view('admin.flights.add');
     }
     public function edit(FlightRequest $request, $id){
         $flight = DB::table('flight')->where('idFlight','=',$id)->first();
@@ -35,7 +35,7 @@ class FlightController extends Controller
                 return redirect()->route('route_flight_index',['idFlight'=>$id]);
             }
         }
-        return view('flights.edit',compact('flight'));
+        return view('admin.flights.edit',compact('flight'));
     }
     public function delete($id){
         Flight::where('idFlight',$id)->delete();

@@ -1,4 +1,4 @@
-@extends('templates.layoutClient')
+@extends('frontend.templates.layoutClient')
 @section('content')
     <h1 class="text-center">Login</h1>
     <form action="{{ route('login') }}" method="POST">
