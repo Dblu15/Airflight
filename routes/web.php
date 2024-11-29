@@ -60,3 +60,4 @@ Route::get('/logout', [\App\Http\Controllers\Auth\AuthController::class,'logout'
 
 Route::match(['GET','POST'],'/findFLight/add',[App\Http\Controllers\FindFlightController::class,'add'])->name('findFlight');
 Route::match(['GET','POST'],'/findFLight/edit/{id}',[App\Http\Controllers\FindFlightController::class,'edit'])->name('editFindFlight');
+//im
