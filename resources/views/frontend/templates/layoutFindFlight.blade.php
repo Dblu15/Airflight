@@ -3,17 +3,18 @@
 
 
 <!-- Mirrored from jetly-html.vercel.app/main-html/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jul 2023 18:05:51 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Find Flight || Jetly </title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/images/favicons/apple-touch-icon.png')}}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/images/favicons/favicon-32x32.png')}}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/favicons/favicon-16x16.png')}}" />
-    <link rel="manifest" href="{{asset('assets/images/favicons/site.webmanifest')}}" />
-    <meta name="description" content="Jetly HTML 5 Template " />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/images/favicons/apple-touch-icon.png')}}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/images/favicons/favicon-32x32.png')}}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/images/favicons/favicon-16x16.png')}}"/>
+    <link rel="manifest" href="{{asset('assets/images/favicons/site.webmanifest')}}"/>
+    <meta name="description" content="Jetly HTML 5 Template "/>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -21,34 +22,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/animate/custom-animate.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/jarallax/jarallax.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.pips.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/odometer/odometer.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/swiper/swiper.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/jetly-icons/style.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/tiny-slider/tiny-slider.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/reey-font/stylesheet.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/bxslider/jquery.bxslider.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/vegas/vegas.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/jquery-ui/jquery-ui.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/nice-select/nice-select.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap/css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/animate/animate.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/animate/custom-animate.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/fontawesome/css/all.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/jarallax/jarallax.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.pips.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/odometer/odometer.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/swiper/swiper.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/jetly-icons/style.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/tiny-slider/tiny-slider.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/reey-font/stylesheet.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.carousel.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.theme.default.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/bxslider/jquery.bxslider.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/vegas/vegas.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/jquery-ui/jquery-ui.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/vendors/nice-select/nice-select.css')}}"/>
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/jetly.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/jetly-responsive.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/jetly.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/css/jetly-responsive.css')}}"/>
 
 </head>
 
@@ -56,9 +57,6 @@
 
 <div class="custom-cursor__cursor"></div>
 <div class="custom-cursor__cursor-two"></div>
-
-
-
 
 
 {{--<div class="preloader">--}}
@@ -262,7 +260,8 @@
 
     <!--Page Header Start-->
     <section class="page-header">
-        <div class="page-header-bg" style="background-image: url({{asset('assets/images/backgrounds/page-header-bg.jpg')}})">
+        <div class="page-header-bg"
+             style="background-image: url({{asset('assets/images/backgrounds/page-header-bg.jpg')}})">
         </div>
         <div class="container">
             <div class="page-header__inner">
@@ -279,7 +278,7 @@
 
     <!--Error Page Start-->
     <section class="error-page">
-        @include('templates.errors')
+        @include('admin.layouts.errors')
         @yield('findFlight')
     </section>
     <!--Error Page End-->
@@ -399,8 +398,9 @@
         <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
         <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="{{asset('assets/images/resources/logo-2.png')}}" width="143"
-                                                              alt="" /></a>
+            <a href="index.html" aria-label="logo image"><img src="{{asset('assets/images/resources/logo-2.png')}}"
+                                                              width="143"
+                                                              alt=""/></a>
         </div>
         <!-- /.logo-box -->
         <div class="mobile-nav__container"></div>
@@ -426,7 +426,6 @@
         </div><!-- /.mobile-nav__top -->
 
 
-
     </div>
     <!-- /.mobile-nav__content -->
 </div>
@@ -438,7 +437,7 @@
     <div class="search-popup__content">
         <form action="#">
             <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-            <input type="text" id="search" placeholder="Search Here..." />
+            <input type="text" id="search" placeholder="Search Here..."/>
             <button type="submit" aria-label="search submit" class="thm-btn">
                 <i class="icon-magnifying-glass"></i>
             </button>
@@ -477,7 +476,7 @@
 <script src="{{asset('assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
 <script src="{{asset('assets/vendors/nice-select/jquery.nice-select.min.js')}}"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         var dateInput = document.getElementById("dateInput");
         var today = new Date(); // Lấy ngày hôm nay
 
@@ -488,8 +487,6 @@
         dateInput.value = formattedDate;
     });
 </script>
-
-
 
 
 <!-- template js -->
